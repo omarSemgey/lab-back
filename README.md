@@ -1,5 +1,10 @@
 <h1>Library Management System (LMS)</h1>
 
+- Postman test Employees [documenter](https://documenter.getpostman.com/view/34018148/2sA3XY6y4k)
+- Postman test Analyses [documenter](https://documenter.getpostman.com/view/34018148/2sA3XY6y4m)
+- Postman test Branches [documenter](https://documenter.getpostman.com/view/34018148/2sA3XY6y4n)
+- Postman test Patients [documenter](https://documenter.getpostman.com/view/34018148/2sA3XY6y4o)
+
 - Here are the instructions for setting up the project: <br/>
 NOTE: you need to install xammp and any editor on your desktop.
 <br>1- Clone the repository to your local machine using the following command: 
@@ -21,4 +26,5 @@ NOTE: you need to install xammp and any editor on your desktop.
 <br><code>php artisan migrate:fresh --seed</code><br>
 7- Start the development server: 
 <br><code>php artisan serve</code><br>
-8- Access the application in your web browser at http://localhost:8000. 
+8- Access the application in your web browser at http://127.0.0.1:8000.
+

@@ -173,36 +173,36 @@ class AnalysesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
-    {
-        $analyses = Analyses::find($id);
+    // public function destroy($id)
+    // {
+    //     $analyses = Analyses::find($id);
 
-        if($analyses == null){
-            return response()->json([
-                'status' => 'error',
-                'error' => 'analyses doesnt exist',
-            ],404);
-        } 
+    //     if($analyses == null){
+    //         return response()->json([
+    //             'status' => 'error',
+    //             'error' => 'analyses doesnt exist',
+    //         ],404);
+    //     } 
 
-        try{
-            DB::beginTransaction();
+    //     try{
+    //         DB::beginTransaction();
 
-            $analyses->delete();
+    //         $analyses->delete();
 
-            DB::commit();
+    //         DB::commit();
 
-            return response()->json([
-                'status' => 'success',
-                'message' => 'analyses deleted successfully',
-            ]);
-        }catch(\Throwable $err){
+    //         return response()->json([
+    //             'status' => 'success',
+    //             'message' => 'analyses deleted successfully',
+    //         ]);
+    //     }catch(\Throwable $err){
 
-            DB::rollBack();
+    //         DB::rollBack();
 
-            return response()->json([
-                'status' => 'error',
-            ]);
-        };
+    //         return response()->json([
+    //             'status' => 'error',
+    //         ]);
+    //     };
 
-    }
+    // }
 }

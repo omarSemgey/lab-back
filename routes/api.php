@@ -37,7 +37,7 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('Analyses',AnalysesController::class);
 Route::post('Analyses','App\Http\Controllers\AnalysesController@store'::class)->middleware('auth:employees,patients');
 Route::put('Analyses','App\Http\Controllers\AnalysesController@update'::class)->middleware('auth:employees');
-Route::delete('Analyses','App\Http\Controllers\AnalysesController@delete'::class)->middleware('auth:employees,patients');
+// Route::delete('Analyses','App\Http\Controllers\AnalysesController@delete'::class)->middleware('auth:employees,patients');
 
 // auth
 Route::controller(EmployeesAuthController::class)->group(function () {
