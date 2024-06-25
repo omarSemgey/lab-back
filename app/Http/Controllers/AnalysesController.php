@@ -38,7 +38,11 @@ class AnalysesController extends Controller
                 $originalContentName= $content->getClientOriginalName();
 
                 if(preg_match('/\.[^.]+\./',$originalContentName)){
-                    throw new Exception(trans('general.notAllowedAction'),403);
+                    return response()->json([
+                        'status' => 'error',
+                        'message' => 'content is not appropriate.',
+                    ],403);
+                    DB::rollBack();
                 }
 
                 $contentName= Str::random(32);
