@@ -21,7 +21,7 @@ NOTE: you need to install xammp and any editor on your desktop.
         DB_PORT=3306
         DB_DATABASE=lab
         DB_USERNAME=root
-        DB_PASSWORD=></code><br>
+        DB_PASSWORD=</code><br>
 6- Run the database migrations: 
 <br><code>php artisan migrate:fresh --seed</code><br>
 7- Start the development server: 
